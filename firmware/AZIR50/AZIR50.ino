@@ -46,9 +46,9 @@
 #define SETTING_TYPE_START_INDEX  0x01
 
 // 赤外線のコマンド
-#define IRCMD_SEND_SETTING   0xB3
 #define IRCMD_SEND_KEY_DOWN  0xB1
 #define IRCMD_SEND_KEY_UP    0xB2
+#define IRCMD_SEND_SETTING   0xB7
 
 // キーが押されていたデータのバイト数
 #define PRESS_STATE_LENGTH   12
@@ -116,6 +116,7 @@ void erom_read() {
 // 赤外線で設定情報を送信
 void ir_send_setting() {
     ir_serial.write(IRCMD_SEND_SETTING); // 設定情報を送るコマンド
+    ir_serial.write(0x01); // データタイプ1(今後増えた時用)
     ir_serial.write(setting_type); // 今何を設定中か
     ir_serial.write(scan_mode); // スキャンモード
     ir_serial.write(send_start_index); // スキャンタイプ
@@ -241,7 +242,7 @@ void setting_loop() {
         } else if (setting_btn_stat == 1) {
             // 前から設定ボタンは押されていた
             press_time++; // 押されている時間カウントアップ
-            if (press_time > 150) {
+            if (press_time > 40) {
                 // 長押しされている
                 setting_type++; // セッティングモードのタイプをカウントアップ
                 if (setting_type > 1) setting_type = SETTING_TYPE_SCAN_MODE;
@@ -252,7 +253,7 @@ void setting_loop() {
     }
     // 設定情報を3秒おきに送信
     setting_send_time++;
-    if (setting_send_time > 200) {
+    if (setting_send_time > 30) {
         ir_send_setting();
     }
     // ループ間の待ち
@@ -320,7 +321,7 @@ void scan_loop() {
     }
 
     // ループ間の待ち
-    delay(10);
+    delay(2);
 }
 
 // 起動時の処理
@@ -345,8 +346,8 @@ void setup() {
     // 設定モードとして起動するか判定
     pinMode(SETTING_PIN, INPUT_PULLUP); // 設定ピン読み込みで初期化
     delay(10);
-    // 起動してから1 秒間の間に設定ボタン押されたら設定モードにする
-    for (i=0; i<100; i++) {
+    // 起動してから1.5秒間の間に設定ボタン押されたら設定モードにする
+    for (i=0; i<150; i++) {
         if (!digitalRead(SETTING_PIN)) {
             // 設定ボタン押されたら設定モードON
             setting_mode_flag = true; // 設定モードON
