@@ -5,7 +5,10 @@ azir（エーゼット、アイアール）は自作の赤外線キーボード�
 <br><br>
 
 <b>簡単に作れる</b><br>
-AZIR50を使用すればスイッチと電池を繋ぐだけで赤外線キーボードになりますし、送信している信号がとてもシンプルなので自前の赤外線キーボードを作る事も用意です。<br>
+AZIR50を使用すればスイッチと電池を繋ぐだけで赤外線キーボードになります。<br>
+送信している信号がとてもシンプルなので自前の赤外線キーボードを作る事も用意です。<br>
+
+リンク： <a href="/docs/command.md">AZIR 通信コマンド</a><br>
 
 <br><br>
 
@@ -25,7 +28,7 @@ QMKやPRKのような位置づけになりますが、キーボード別にコ�
 ファームウェア書き込みサイトからESP32S3に書き込みを行うだけで様々なキーボードで使用できます。<br>
 キー配列やキーマップの設定はAZTOOLから行います。<br>
 <br>
-リンク： <a href="https://palette-system.github.io/az-core/index_s3.html">AZSENSORファームウェア</a><br>
+リンク： <a href="https://palette-system.github.io/az-core/azsensor.html">AZSENSORファームウェア</a><br>
 
 <br><br>
 
