@@ -9,6 +9,16 @@ ESP32S3に赤外線用のフォトトランジスタを接続するだけでAZSE
 <b>配線</b><br>
 <img src="/images/azsensor.png">
 <br>
+<br>
+
+<b>ESP32S3のファームウェア</b><br>
+AZSENSORのファームウェアをそのまま使用します。<br>
+ファームウェアの書き込み手順は下記を参照して下さい。<br>
+<br>
+リンク： <a href="https://palette-system.github.io/az-core/azsensor.html" target="_blank">AZSENSORのファームウェア</a><br>
+
+<br>
+<br>
 
 ## ProMicroの配線
 ProMicroを赤外線キーボードにするための配線例を紹介します。<br>
@@ -19,8 +29,9 @@ ProMicroを赤外線キーボードにするための配線例を紹介します
 <b>配線</b><br>
 <img src="/images/promicro_send.png">
 <br>
+<br>
 
-## ProMicroのファームウェア
+<b>ProMicroのファームウェア</b><br>
 ArduinoIDEでキー入力するサンプルを紹介します。<br>
 5秒おきに仮想キー1を押して離すだけをするサンプルです。<br>
 <br>
@@ -28,4 +39,5 @@ ArduinoIDEでキー入力するサンプルを紹介します。<br>
 <br>
 <b>ソースコード</b><br>
 <img src="/images/ir_send_sample.png">
+<br>
 <br>
