@@ -351,6 +351,7 @@ void setup() {
         if (!digitalRead(SETTING_PIN)) {
             // 設定ボタン押されたら設定モードON
             setting_mode_flag = true; // 設定モードON
+            while (!digitalRead(SETTING_PIN)) { delay(100); } // 設定ボタンが離されるまで待つ
             break;
         }
         delay(10);
