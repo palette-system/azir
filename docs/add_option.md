@@ -25,7 +25,7 @@ PCに AZSENSOR を接続して Chrome で AZTOOL を開きます。<br>
 <br><br>
 
 ## ４．レイアウトの設定
-レイアウトの設定項目の所にKLEのRawDataを張り付けると、レイアウトが表示されます。<br>
+レイアウトの設定項目の所に追加したいキーボードのレイアウトJSON（KLEのRawData）を張り付けるとレイアウトが表示されます。<br>
 ※ KLEが分からない場合は<a href="https://yskoht.hatenablog.com/entry/2020/12/08/001444">こちら</a>を参照して下さい。<br>
 <img src="/images/aztool_6.png"><br>
 <br>

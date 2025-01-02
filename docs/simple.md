@@ -41,3 +41,8 @@ ArduinoIDEでキー入力するサンプルを紹介します。<br>
 <img src="/images/ir_send_sample.png">
 <br>
 <br>
+
+## キーボードの登録
+AZTOOLを使用してESP32S3にキーボードとして登録します。<br>
+<br>
+リンク： <a href="/docs/add_option.md">AZSENSORにキーボードを追加する手順</a><br>
