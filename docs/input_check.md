@@ -1,5 +1,7 @@
 # 赤外線の信号を受信できてるか確認する
 
+<br><br>
+
 ## １．AZTOOLに接続します
 PCに AZSENSOR を接続して Chrome で AZTOOL を開きます。<br>
 <br>
