@@ -7,9 +7,11 @@
 <br>
 <br>
 
-## ESP32S3との接続
-VCCとGNDとGPIO9を接続すれば動作します。<br>
+## XIAO ESP32S3 との接続
+XIAO ESP32S3 に VCCとGNDとGPIO9を接続すれば動作します。<br>
 他のピンは何処にも接続されていないのではんだ付けしてもしなくても大丈夫です。<br>
+<br>
+秋月電子 リンク： <a href="https://akizukidenshi.com/catalog/g/g118078/" target="_blank">XIAO ESP32S3</a><br>
 <br>
 <img src="/images/azsensor_def.png"><br>
 <br><br>

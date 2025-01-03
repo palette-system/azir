@@ -1,9 +1,10 @@
 # 簡単に赤外線キーボードを試す
 
 ## ESP32S3の配線
-ESP32S3に赤外線用のフォトトランジスタを接続するだけでAZSENSORの変わりが作成できます。<br>
+XIAO ESP32S3に赤外線用のフォトトランジスタを接続するだけでAZSENSORの変わりが作成できます。<br>
 秋月電子で購入できる「L-51ROPT1D1」などがお手頃です。<br>
 <br>
+秋月電子 リンク： <a href="https://akizukidenshi.com/catalog/g/g118078/" target="_blank">XIAO ESP32S3</a><br>
 秋月電子 リンク： <a href="https://akizukidenshi.com/catalog/g/g104211/" target="_blank">L-51ROPT1D1</a><br>
 <br>
 <b>配線</b><br>
@@ -11,7 +12,7 @@ ESP32S3に赤外線用のフォトトランジスタを接続するだけでAZSE
 <br>
 <br>
 
-<b>ESP32S3のファームウェア</b><br>
+<b>XIAO ESP32S3のファームウェア</b><br>
 AZSENSORのファームウェアをそのまま使用します。<br>
 ファームウェアの書き込み手順は下記を参照して下さい。<br>
 <br>
