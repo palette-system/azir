@@ -37,6 +37,7 @@ ArduinoIDEでキー入力するサンプルを紹介します。<br>
 5秒おきに仮想キー1を押して離すだけをするサンプルです。<br>
 <br>
 サンプルソースコード リンク：　<a href="/firmware/ir_send_sample_promicro/ir_send_sample_promicro.ino" target="_blank">ir_send_sample_promicro.ino</a><br>
+リンク： <a href="/docs/command.md">AZIR 通信コマンド</a><br>
 <br>
 <b>ソースコード</b><br>
 <img src="/images/ir_send_sample.png">
